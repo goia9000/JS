@@ -1,0 +1,48 @@
+#banner {
+    background-image: url('Wm0OKs2ASkadxS7-c7keQw.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+body h1, p {
+    display: flex;
+    color: red;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.input1-container{
+    text-align: center;
+    margin-top: 250px;
+}
+
+.input2-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.botoes-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.botao-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#resultado {
+    font-weight: 800;
+    margin-top: 15px;
+}

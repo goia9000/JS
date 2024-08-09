@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Aula 8 - Array</title>
+  </head>
+  <body>
+    <script>
+      let fruta = "maça";
+
+      //Usando Colchetes
+      let frutas = ["maça", "banana", "tomate"];
+
+      //usando o construtor Array
+      let numeros = new Array(1, 5, 7, 9, 8);
+      console.log(frutas);
+
+      //Acessando os elementos do array
+      console.log(frutas[1]);
+
+      //Substituir item no array
+      frutas[0] = "Manga";
+      console.log(frutas);
+
+      //Adicionar um item no final do array
+      frutas.push("Pera");
+      console.log(frutas);
+
+      //Remover o ultimo item da array
+      frutas.pop();
+      console.log(frutas);
+
+      //remover o primeiro item da array
+      frutas.shift();
+      console.log(frutas);
+
+      //Adiciona o primeiro item
+      frutas.unshift("Melancia");
+      console.log(frutas);
+
+      //Retorna a quantidade do array
+      console.log(frutas.length);
+
+      //Imprimir todos os itens do array
+      for (let i = 0;i < frutas.length; i++){
+        console.log(frutas[i]);
+      }
+
+      frutas.forEach(function(item, key) {
+        console.log(item, key);
+      });
+
+      //Letras maiusculas de uma nova variável (também pode ser usado o mesmo nome)
+      let novaListaFrutas = frutas.map(function(item){
+    //     if (item == "Melancia"){
+    //     return item.toUpperCase();
+    //   }
+    //     return item;
+
+        return (item == "Melancia") ? item.toUpperCase() : item;
+      });
+      console.log(novaListaFrutas);
+    </script>
+  </body>
+</html>

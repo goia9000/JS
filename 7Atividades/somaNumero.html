@@ -1,0 +1,22 @@
+<html>
+  <title>Soma ate o numero</title>
+  <body>
+    <h1>
+      Crie um programa que some os números de 1 até o número fornecido pelo
+      usuário exiba o resultado.
+    </h1>
+    <hr />
+    <script>
+      let limite = parseInt(prompt("Informe um número inteiro para o limite das somas: "));
+      let soma = 0;
+      let total = 0;
+      do {
+        document.write(soma + " + ");
+        total+=soma;
+        soma ++;        
+      }
+      while (soma <= limite)
+        document.write(`O valor final da soma é: ${total}`);      
+    </script>
+  </body>
+</html>

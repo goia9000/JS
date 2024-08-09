@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Aula de Revisão</title>
+    <style>
+      #boxResultado {
+        border: 1px solid black;
+        min-height: 50px;
+        width: 250px;
+        margin-bottom: 20px;
+        background-color: #ededed;
+        border-radius: 15px;
+      }
+      .resultado {
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Aula de revisão de JavaScript</h1>
+    <div id="boxResultado"></div>
+    <script>
+      function imprimirResultado(mensagem) {
+        const boxResultado = document.getElementById("boxResultado");
+        boxResultado.innerHTML += "O resultado é: " + mensagem + "<hr>";
+      }
+
+      let num1 = 10;
+      let num2 = 20;
+
+      let resultado = num1 + num2;
+
+      console.log("O resultado é: " + resultado);
+      document.write("O Resultado é:" + resultado);
+
+      imprimirResultado("O Resultado é: " + resultado);
+      imprimirResultado("O Resultado é: " + resultado);
+      imprimirResultado("O Resultado é: " + resultado);
+      imprimirResultado("O Resultado é: " + resultado);
+      imprimirResultado("O Resultado é: " + resultado);
+      imprimirResultado("O Resultado é: " + resultado);
+
+      //   Verificar se o número é par ou impar
+
+      let numero = 10;
+
+      if (numero % 2 == 0) {
+        imprimirResultado("O número " + numero + " é par!");
+      } else {
+        imprimirResultado("O número " + numero + " é impar!");
+      }
+
+      // Contar de 1 à 5 usando laço de repetição
+
+      for(let i = 1; i <= 5; i++){
+        imprimirResultado(i);
+      }
+      let i = 1;
+      while(i <=5){
+        imprimirResultado(i);
+        i++
+      }
+
+      // Crie uma função que verifique se uma pessoa pode votar
+
+      function podeVotar(idade) {
+        if (idade >= 16){
+            return "Você pode votar";
+        }
+        return "Você não pode votar";//  não precisamos utilizar else para uma resposta binária
+        
+      }
+      let idade = 17
+      imprimirResultado(podeVotar(idade));
+
+      // Calculos simples (adição, subtração, divisão, multiplicação)
+
+      let numx = 10;
+      let numy = 15;
+
+      imprimirResultado ("Adição: " + (numx+numy));
+      imprimirResultado ("Subtração: " + (numx-numy));
+      imprimirResultado ("Multiplicação: " + (numx*numy));
+      imprimirResultado ("Divisão: " + (numx/numy));
+
+
+      // Verificar faixa hetárea do indivíduo (Criança, Adolescente, Adulto, Idoso)
+
+      let faixaEtarea = 32;
+
+      if (faixaEtarea < 10){
+        imprimirResultado("A pessoa é criança");
+      }
+      else if (faixaEtarea >= 10 && faixaEtarea <20){
+        imprimirResultado("A pessoa é adolescente");
+      }
+      else if (faixaEtarea >=20 && faixaEtarea <60) {
+        imprimirResultado("A pessoa é adulta");
+      }
+      else {
+        imprimirResultado("A pessoa é idosa");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Aula 06 - Funções e Eventos</title>
+    </head>
+    <body>
+        <button id="btnAlerta">Mostrar Alerta</button>
+        <p id="textoParagrafo">Texto Inicial</p>
+        <button id="textoBotao">Alterar Texto</button>
+        <script>
+            const btnAlerta = document.getElementById('btnAlerta');
+            const textoParagrafo = document.getElementById('textoParagrafo');
+            const textoBotao = document.getElementById('textoBotao');
+            btnAlerta.addEventListener('click', function(){
+                alert('Botão de Alerta Clicado!');
+            });
+            textoParagrafo.addEventListener('click', function(){
+                textoParagrafo.textContent = "Mudou de Texto o Parágrafo"
+            });
+            textoBotao.addEventListener('click', function(){
+                textoBotao.textContent = "Mudou o Trem!"
+            });
+        </script>
+    </body>
+</html>

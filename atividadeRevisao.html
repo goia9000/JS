@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Atividade da Revisão</title>
+    <style>
+      body {
+        background-color: #0000ff;
+      }
+      #resultados {
+        border: 1px solid black;
+        min-height: 50px;
+        width: 250px;
+        margin-bottom: 20px;
+        background-color: #d79100;
+        border-radius: 8px;
+        color: #000000;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: 0 auto 20px auto;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+      }
+      h1 {
+        text-align: center;
+        color: #d79100;
+        font-family: "Pacifico", cursive;
+        text-shadow: 8px 8px 12px #000000;
+      }
+      hr {
+        border: 0;
+        height: 2px;
+        background-color: #008f40;
+        margin: 20px 0;
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Atividade da Revisão</h1>
+    <hr />
+    <h1>Resultados</h1>
+    <div id="resultados"></div>
+    <script>
+      function imprimirResultado(mensagem) {
+        const resultados = document.getElementById("resultados");
+        resultados.innerHTML += "Resposta: " + mensagem + "<br><br>";
+      }
+
+      //   Saber se o número é positivo negativo ou zero
+
+      let numero = 0;
+
+      if (numero >= 1) {
+        imprimirResultado(`O número ${numero} é positivo!`);
+      } else if (numero === 0) {
+        imprimirResultado(`O número ${numero} é zero!`);
+      } else {
+        imprimirResultado(`O número ${numero} é negativo`);
+      }
+
+      // Calcular a média de 3 números
+
+      let num1 = 5;
+      let num2 = 10;
+      let num3 = 10;
+
+      let resultadoMedia = (num1 + num2 + num3) / 3;
+
+      imprimirResultado(
+        `A média dos números: ${num1} ${num2} ${num3} é: ${resultadoMedia}`
+      );
+
+      // Determinar o maior de dois números
+
+      let numMaior = 10;
+      let numMaior2 = 11;
+
+      if (numMaior > numMaior2) {
+        imprimirResultado(`O número ${numMaior} é maior que ${numMaior2}`);
+      } else {
+        imprimirResultado(`O número ${numMaior} é menor que o ${numMaior2}`);
+      }
+
+      // Converter temperatura de Celsius para Fahrenheit
+
+      let celsius = 23;
+      let fahrenheit = celsius * 1.8 + 32;
+
+      imprimirResultado(
+        `A conversão de ${celsius} graus Celsius é equivalente à ${fahrenheit} graus Fahrennheit`
+      );
+
+      //   calcular a área de um círculo dado o raio
+
+      let raio = 20;
+
+      let areaCirculo = 3.14 * raio ** 2;
+
+      imprimirResultado(
+        `A área do círculo de um raio de ${raio} é ${areaCirculo}²`
+      );
+
+      // Encontrar a raiz quadrada de um número
+
+      let numeroRq = 36;
+      let resultadoRq = numeroRq ** 0.5;
+
+      imprimirResultado(`A raiz quadrada de ${numeroRq} é ${resultadoRq}`);
+
+      // Calcular o IMC
+
+      let peso = 80;
+      let altura = 1.8;
+
+      let imc = peso / altura ** 2;
+
+      let imcCasaD = imc.toFixed(4);
+      imprimirResultado(
+        `O imc do peso ${peso} e da altura ${altura} é ${imcCasaD}`
+      );
+    </script>
+  </body>
+</html>

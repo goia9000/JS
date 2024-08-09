@@ -1,0 +1,26 @@
+<html>
+  <title>Números pares até seu número</title>
+  <body>
+    <h1>
+      Crie um programa que solicita ao usuário um número e conta quantos números
+      pares existem de 1 até esse número.
+    </h1>
+    <hr />
+    <script>
+      let numero = parseInt(prompt("Informe um número inteiro:"));
+      let contadorPares = 0;
+      let incrementador = 1;
+
+      while (incrementador <= numero) {
+        if (incrementador % 2 === 0) {
+          document.write(`O número ${incrementador} é Par! <br>`);
+          contadorPares++;
+        }
+        incrementador++;
+      }
+      document.write("<br><hr>");
+      document.write(
+        `Foram encontrados ${contadorPares} números pares do número ${numero} até 1, foi descartado o 0`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Aula 04 - Estrutura Condicional</title>
+  </head>
+  <body>
+    <h1>Estrutura Condicional</h1>
+    <p>Crie um programa em JavaScript que retorne a saudação com base na hora informada pelo usuário. Retorne se é "Bom Dia", "Boa Tarde" ou "Boa Noite"</p>
+    <hr>
+    <script>
+      let hora = prompt ("Saudações terráqueo! Digite a hora atual (sem os minutos ex: 23, 15, 07...)");
+
+      if (hora <= 11){
+        document.write(`Bom Dia Humano! Bora pra luta, já está ficando tarde!`);
+      }
+      else if (hora < 18) {
+        document.write(`Humano, estamos no período da tarde! precisamos acelerar nosso desenvolvimento!`);
+      }
+      else {
+        document.write(`Humano, está na hora de pensar em recarregar as energias, amanhã é um novo dia! Boa Noite!`);
+      }
+    
+    </script>
+  </body>
+</html>

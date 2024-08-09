@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Aula 04 - Estrutura Condicional</title>
+    <p>Crie um programa em javascript que avalie a nota e retorne a representação da letra da nota. A > 90 B >= 80 C >= 70 D >= 60 E < 60</p>
+  </head>
+  <body>
+    <h1></h1>
+    <p></p>
+    <hr>
+    <script>
+      let nota = prompt("Digite a nota entre 0 a 100");
+      if (nota >= 90 && nota <= 100){
+        document.write (`Parabéns! Você fez ${nota} pontos, sua nota equivale à A!`);
+      }
+      else if (nota >= 80 && nota <= 89) {
+        document.write (`Quase lá! Você fez ${nota} pontos, sua nota equivale à B!`);
+      }
+      else if (nota >= 70 && nota <= 79) {
+        document.write (`Pode melhorar mais! Você fez ${nota} pontos, sua nota equivale à C!`);
+      }
+      else if (nota >= 60 && nota <= 69) {
+        document.write (`Eu teria vergonha dessa nota. Você fez ${nota} pontos, sua nota equivale à D!`);
+      }
+      else if (nota < 60) {
+        document.write (`Esperava mais de você! Foram só ${nota} pontos, sua nota equivale à E!`);
+      }
+      else {
+        document.write (`${nota} pontos não é uma entrada válida, informe um valor correto`);
+      }
+      
+    </script>
+  </body>
+</html>

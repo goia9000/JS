@@ -1,0 +1,20 @@
+<html>
+  <title>Fatorial</title>
+  <body>
+    <h1>
+      Crie um programa que calcula o fatorial de um número fornecido pelo
+      usuário.
+    </h1>
+    <hr />
+    <script>
+      let numero = parseInt(prompt("Informe um numero inteiro para calcularmos o fatorial"));
+      let fatorial = 1;
+      let numeroInicial = numero;
+      while (numero > 1) {
+        fatorial *= numero;
+        numero--;
+      }
+      document.write(`O ${numeroInicial} fatorial é ${fatorial}`);
+    </script>
+  </body>
+</html>

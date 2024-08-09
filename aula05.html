@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Aula 05 - laço de repetição</title>
+  </head>
+  <body>
+    <h1>Estrutura de repetição em JavaScript</h1>
+    <p>Imprima na tela uma sequência numérica de 1 a 10</p>
+    <hr />
+    <script>
+      let qtdeSenhas = parseInt(prompt ("informe a quantidade de senhas"));
+      var contador = 0;
+      while (contador <= qtdeSenhas) {
+        document.write(contador + "-");
+        contador++;
+      }
+      document.write("<hr>")
+      /*-----------------------------------------------------------------------------------*/
+    
+      for (let contador = 0; contador <= qtdeSenhas; contador++) {
+        /* for trabalha com inicialização, condição ou incremento/decremento */
+        document.write(contador + "-");
+      }
+      document.write("<hr>")
+      /*-----------------------------------------------------------------------------------*/
+    </script>
+      <!-- EU FAÇO POR QUE EU QUERO! -->
+    <script>
+      var contador = 0
+      do {
+       document.write(contador + "-");
+       contador ++
+      } while (contador <= qtdeSenhas);
+    </script>
+  </body>
+</html>

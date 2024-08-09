@@ -1,0 +1,24 @@
+<html>
+  <title>Maior ou Menor?</title>
+  <body>
+    <h1>
+      Crie um programa que solicite ao usuário a sua idade e exiba uma mensagem
+      dizendo se ele é maior de idade (18 anos ou mais) ou menor de idade.
+    </h1>
+    <hr />
+    <script>
+      let idade = parseInt(prompt("Qual sua idade? "));
+
+      if (!isNaN(idade)) {
+        if (idade >= 18) {
+          document.write(`Você tem ${idade} anos e é maior de idade`);
+        } else {
+          document.write(`Você tem ${idade} anos e é menor de idade`);
+        }
+      } 
+      else {
+        document.write("Informe uma idade válida em números, aperte f5 para reiniciar o algorítimo");
+      }
+    </script>
+  </body>
+</html>

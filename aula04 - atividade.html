@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Aula 04 - Estrutura Condicional</title>
+    <p>Crie um programa em javascript que peça ao usuário dois números e uma operação aritmetica (soma, subtração, multiplicação ou divisão). O programa deve realizar a operação solicitada e exibir o resultado, utilizando estruturas condicionais para determinar qual operação executar.
+
+      Passo a passo da atividade:
+
+      Solicitar ao usuário dois números.
+      Solicitar ao usuário uma operação aritmética.
+      Utilizar estruturas conedicionais (if, else if, else) para realizar a operação solicitada.
+      Exibir o resultado da operação na tela.
+    </p>
+  </head>
+  <body>
+    <h1>Operação Aritmética - Atividade 04</h1>
+    <p>Informe Dois Números e Uma Operação Aritmética para Realizar-mos o Cálculo.</p>
+    <hr>
+    <script>
+      let numero1 = parseFloat(prompt('Informe um número'));
+      let numero2 = parseFloat(prompt('Informe mais um número'));
+      let operacao = prompt('Informe uma operação desejada (+-*/)');
+      let resultado
+
+        if (operacao === '+'){
+          resultado = numero1 + numero2;
+          document.write (`A operação de ${numero1} com o ${numero2} ultilizando a operação aritimética de ${operacao} é: ${resultado}`);
+        }
+        else if (operacao === '-') {
+          resultado = numero1 - numero2;
+          document.write (`A operação de ${numero1} com o ${numero2} ultilizando a operação aritimética de ${operacao} é: ${resultado}`);
+        }
+        else if (operacao === '*'){
+          resultado = numero1 * numero2;
+          document.write (`A operação de ${numero1} com o ${numero2} ultilizando a operação aritimética de ${operacao} é: ${resultado}`);
+        }
+        else if(operacao === '/'){
+          resultado = numero1 / numero2;
+          document.write (`A operação de ${numero1} com o ${numero2} ultilizando a operação aritimética de ${operacao} é: ${resultado}`);
+        }
+        else{
+          document.write (`Informe uma operação aritmética válida`);
+        }
+      
+    </script>
+  </body>
+</html>
