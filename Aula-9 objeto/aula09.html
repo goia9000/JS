@@ -73,6 +73,42 @@
 
         console.log(camiseta);
         
+
+        //Atividade
+
+        let numeros = [1, 2, 3, 5, 8, 6, 18, 10];
+        let contador = 0;
+
+        numeros.forEach(function(numero){
+            if(numero % 2 === 0){
+                contador ++;
+            }
+        });
+
+        console.log ("A Variável número tem : ",contador);
+
+
+        //
+
+        let aluno = {
+            nome: "Bruno Goia",
+            idade: 32,
+            curso: "Técnico em informática para Internet",
+            notas: [8, 9.5, 9, 8.5],
+            
+        }
+
+        console.log("O ", aluno.nome);
+        console.log("está com as notas: ",aluno.notas);
+        console.log("sua média é: ");
+
+        let soma = 0;
+
+        aluno.notas.forEach(function(nota){
+            soma += nota;
+        });
+
+        console.log("A média das notas é: ", (soma/aluno.notas.length));
     </script>
 </body>
 </html>
