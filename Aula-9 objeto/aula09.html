@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula de JavaScript</title>
+</head>
+<body>
+    <script>
+        let pessoa = {
+            nome: "Bruno Goia",
+            Idade: 32,
+            profissao: "Dev",
+            salario: 2000,
+        }
+        //Acessando dados de um objeto
+        
+        console.log(pessoa);
+        console.log(pessoa.profissao, pessoa.Idade);
+        console.log(pessoa['salario']);
+
+        // Modificando dados de uma propriedade
+
+        pessoa.idade = 30;
+        console.log(pessoa);
+
+        // Adicionar uma nova propriedade
+        
+        pessoa.genero = "Masculino";
+        console.log(pessoa);
+
+        //Remover propriedade
+
+        delete pessoa.salario;
+        console.log(pessoa);
+
+        // Métodos de um Objeto (Ações dos objetos)
+
+        let carro = {
+            marca: "Toyota",
+            modelo: "Corolla",
+            ano: 2020,
+            ligar: function(){
+                console.log(`O carro ${this.marca} está ligado`);
+            }
+        }
+
+        carro.ligar();
+
+        // ATIVIDADE
+
+        let camiseta = {
+            tecido: "Algodão",
+            precoCusto: 7.80,
+            precoVenda: 57.90,
+            marca: "X",
+            estoque: 37, 
+            tamanho: function(){
+                console.log(`A camiseta é tamanho ${this.tamanho}`)
+            }
+        }
+        console.log(camiseta);
+
+        camiseta.precoVenda = 53.90;
+        console.log (camiseta.precoVenda);
+
+        delete camiseta.tecido;
+
+        camiseta.cor = "branca";
+        console.log(camiseta.cor);
+
+        camiseta.tamanho = "M";
+        console.log(camiseta.tamanho);
+
+        console.log(camiseta);
+        
+    </script>
+</body>
+</html>

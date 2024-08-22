@@ -5,6 +5,10 @@ function infoPokemon() {
 
   console.log(nomePokemon);
   const boxInfoPokemon = document.getElementById("boxInfoPokemon");
+
+  pokeball.style.display = 'flex';
+  pokeball.classList.add('spin');
+
   //console.log(nomePokemon);
   fetch(`https://pokeapi.co/api/v2/pokemon/${nomePokemon}`)
     .then((response) => {
